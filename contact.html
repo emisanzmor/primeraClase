@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Login</title>
+    <title>Contacto</title>
 </head>
 <body>
     <header>
-        
         <nav><ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -20,18 +19,14 @@
         </ul></nav>
     </header>
     <div class="contenedor">
-        <h1>Login</h1>
-        <form>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            
-            <input type="password" id="password" name="password" placeholder="Password">
-            
-            <button type="submit">Login</button>
+        <h1>Contacto</h1>
+        <form id="contact-form">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <input type="email" id="email" name="email" placeholder="Tu email">
+            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+            <button type="submit">Enviar mensaje</button>
         </form>
-        <img src="https://cataas.com/cat" alt="Gato" class="cat-image">
-
     </div>
-    <script src="submit.js"></script>
 
     <footer>
         <p>Copyright 2026</p>

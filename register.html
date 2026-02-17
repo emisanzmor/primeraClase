@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Login</title>
+    <title>Registro</title>
 </head>
 <body>
     <header>
-        
         <nav><ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -20,18 +19,16 @@
         </ul></nav>
     </header>
     <div class="contenedor">
-        <h1>Login</h1>
-        <form>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            
+        <h1>Registro</h1>
+        <form id="register-form">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+            <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Password">
-            
-            <button type="submit">Login</button>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar password">
+            <button type="submit">Registrarse</button>
         </form>
-        <img src="https://cataas.com/cat" alt="Gato" class="cat-image">
-
+        <p class="register-link">¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a></p>
     </div>
-    <script src="submit.js"></script>
 
     <footer>
         <p>Copyright 2026</p>

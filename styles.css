@@ -1,55 +1,77 @@
 body {
-    background-color: gray;
+    background-color: rgba(242, 236, 220, 0.654);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+    padding: 0.625rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 6.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 .contenedor {
     background-color: white;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 1.875rem;
+    border-radius: 0.625rem;
     text-align: center;
+    margin: auto;
+    width: 18.75rem;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 label {
     display: block;
     color: black;
-    font-size: 16px;
+    font-size: 0.855rem;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem;
     box-sizing: border-box;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 0.625rem;
 }
 
 button:hover {
@@ -57,7 +79,18 @@ button:hover {
 }
 
 .cat-image {
-    width: 150px;
-    margin-top: 20px;
-    border-radius: 10px;
+    width: 9.375rem;
+    margin-top: 1.25rem;
+    border-radius: 0.625rem;
 }
+
+footer {
+    background-color: rgba(57, 56, 56, 0.9);
+    color: white;
+    text-align: center;
+    padding: 0.3125rem;
+    margin-top: auto;
+    font-size: 0.875rem;
+    color: rgb(203, 199, 199);
+}
+
