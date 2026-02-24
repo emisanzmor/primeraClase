@@ -70,8 +70,9 @@ if (loginForm) {
         const usuario = verificarLogin(nombre, password);
         
         if (usuario) {
-            alert('¡Bienvenido ' + usuario.nombre + '! Login exitoso');
-            console.log('Login exitoso para:', usuario);
+            Auth.iniciarSesion(usuario);
+            alert('¡Bienvenido ' + usuario.nombre + '!');
+            window.location.href = 'about.html';
         } else {
             alert('Usuario o contraseña incorrectos');
             console.log('Login fallido');
@@ -111,16 +112,15 @@ if (registerForm) {
             password: password
         };
         
-        console.log('=== NUEVO REGISTRO ===');
+        console.log('NUEVO REGISTRO:');
         console.log('Nombre:', nuevoUsuario.nombre);
         console.log('Email:', nuevoUsuario.email);
         console.log('Password:', nuevoUsuario.password);
-        console.log('======================');
         
         guardarUsuario(nuevoUsuario);
         
         alert('¡Registro exitoso! Ya puedes iniciar sesión');
         
-        registerForm.reset();
+        window.location.href = 'index.html';
     });
 }
