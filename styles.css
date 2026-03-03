@@ -124,6 +124,17 @@ button:hover {
     border-radius: 0.625rem;
 }
 
+.pokemon-imagen {
+    width: 10rem;
+    height: 10rem;
+    image-rendering: pixelated;
+}
+
+.pokemon-nombre {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
 footer {
     background-color: rgba(57, 56, 56, 0.9);
     color: white;
