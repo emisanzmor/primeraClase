@@ -7,14 +7,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>About</title>
+    <title>Pokédex</title>
 </head>
 <body>
     <header></header>
-    <div class="contenedor">
-        <h1>Pokémon:</h1>
-        <div id="pokemon-resultado"></div>
-    </div>
+    
+    <main class="pokedex-main">
+        <h1>Pokédex</h1>
+        
+        <section class="filtros-seccion">
+            <div class="filtros-contenedor">
+                <div class="filtro-grupo">
+                    <label for="filtro-nombre">Nombre:</label>
+                    <input type="text" id="filtro-nombre" placeholder="Ej: pikachu">
+                </div>
+                
+                <div class="filtro-grupo">
+                    <label for="filtro-id">ID:</label>
+                    <input type="number" id="filtro-id" placeholder="Ej: 25">
+                </div>
+                
+                <div class="filtro-grupo">
+                    <label for="filtro-tipo">Tipo:</label>
+                    <input type="text" id="filtro-tipo" placeholder="Ej: fire, water">
+                </div>
+                
+                <div class="filtro-botones">
+                    <button onclick="filtrarPokemon()">Filtrar</button>
+                    <button onclick="limpiarFiltros()" class="btn-limpiar">Limpiar</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pokemon-contenedor" class="pokemon-grid">
+            <p class="cargando">Cargando Pokémon...</p>
+        </section>
+    </main>
 
     <footer></footer>
     <script src="auth.js"></script>
