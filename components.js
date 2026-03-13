@@ -8,7 +8,8 @@ function cargarHeader() {
         
         if (sesion) {
             menuItems = `
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Pokédex</a></li>
+                <li><a href="batalla.html">Batalla</a></li>
                 <li><a href="contact.html">Contact</a></li>
             `;
             userSection = `

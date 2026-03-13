@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Batalla</title>
+</head>
+<body>
+    <header></header>
+    
+    <main class="batalla-main">
+        <h1>Batalla Pokémon</h1>
+        
+        <div id="seleccion" class="seccion-batalla">
+            <select id="sel1" onchange="elegir(1)"><option>Cargando...</option></select>
+            <span class="vs">VS</span>
+            <select id="sel2" onchange="elegir(2)"><option>Cargando...</option></select>
+            <div class="cards">
+                <div id="card1" class="mini-card"></div>
+                <div id="card2" class="mini-card"></div>
+            </div>
+            <button id="btn-start" onclick="iniciar()" disabled>PELEAR</button>
+        </div>
+        
+        <div id="batalla" class="seccion-batalla" style="display:none;">
+            <div class="arena-simple">
+                <div id="poke1"></div>
+                <div id="poke2"></div>
+            </div>
+            <div id="log" class="log"></div>
+            <p id="turno"></p>
+            <div class="botones">
+                <button onclick="atacar('normal')">ATAQUE</button>
+                <button id="btn-esp" onclick="atacar('especial')" disabled>ESPECIAL</button>
+                <button id="btn-def" onclick="atacar('defensa')" disabled>DEFENSA</button>
+            </div>
+        </div>
+        
+        <div id="ganador" class="ganador-box" style="display:none;"></div>
+        <button onclick="reiniciar()">REINICIAR</button>
+    </main>
+
+    <footer></footer>
+    <script src="auth.js"></script>
+    <script>Auth.protegerPagina();</script>
+    <script src="components.js"></script>
+    <script src="batalla.js"></script>
+</body>
+</html>

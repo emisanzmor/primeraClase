@@ -249,6 +249,42 @@ button:hover {
     grid-column: 1 / -1;
 }
 
+/* BATALLA */
+.batalla-main { max-width: 500px; margin: 0 auto; padding: 1rem; flex: 1; text-align: center; }
+.seccion-batalla { background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.vs { font-size: 1.5rem; font-weight: bold; color: #e74c3c; margin: 0 1rem; }
+.cards { display: flex; justify-content: center; gap: 2rem; margin: 1rem 0; }
+.mini-card img { width: 80px; image-rendering: pixelated; }
+
+.arena-simple { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 1rem; 
+    border: 2px solid #333;
+}
+.arena-simple img { width: 80px; image-rendering: pixelated; }
+.arena-simple p { margin: 0.2rem 0; }
+
+.log { 
+    background: white; 
+    color: #333; 
+    padding: 0.5rem; 
+    height: 120px; 
+    overflow-y: auto; 
+    text-align: left; 
+    font-size: 0.85rem; 
+    margin: 1rem 0; 
+    border: 1px solid #ccc; 
+}
+.log p { margin: 0.2rem 0; }
+
+.botones { display: flex; justify-content: center; gap: 0.5rem; }
+.botones button:disabled { background: #ccc; }
+
+.ganador-box { background: #333; padding: 1rem; }
+.ganador-box h2, .ganador-box h3 { color: white; margin: 0.5rem 0; }
+.ganador-box img { width: 100px; image-rendering: pixelated; }
+
 footer {
     background-color: rgba(57, 56, 56, 0.9);
     color: white;
